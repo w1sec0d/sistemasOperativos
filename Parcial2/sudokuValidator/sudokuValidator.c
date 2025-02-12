@@ -134,13 +134,14 @@ int main()
 
     // Expera a que todos los hilos terminen
     int solucionValida = 1;
-    for (int i = 0; i < 11; i++)
+    for (int i = 0; i < 27; i++)
     {
         void *result;
         pthread_join(threads[i], &result); // Ejecuta el hilo y espera a que termine
         if ((intptr_t)result == 0)
         {
             solucionValida = 0;
+            break;
         }
         free(params[i]); // Libera la memoria asignada a los parámetros
     }
