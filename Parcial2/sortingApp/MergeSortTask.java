@@ -2,7 +2,7 @@ import java.util.concurrent.RecursiveAction;
 
 
 public class MergeSortTask extends SortTask {
-    private static final int THRESHOLD = 100; // Umbral para usar Insertion Sort en sublistas pequeñas
+    private static final int THRESHOLD = 3; // Umbral para usar Insertion Sort en sublistas pequeñas
 
 
     // Constructor
