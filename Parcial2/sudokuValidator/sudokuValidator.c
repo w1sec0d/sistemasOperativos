@@ -1,3 +1,4 @@
+// Como tal se implementaron hilos, pero no quiere decir que la solucion sera paralela
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
